@@ -1,6 +1,6 @@
 from django.urls import path
 
-from replicaInstagram import views
+from posts import views
 
 # from appInstagram.views import
 
@@ -15,6 +15,5 @@ from replicaInstagram import views
 # )
 urlpatterns = [
     # path('swagger/', schema_view.with_ui('swagger', cache_timeout=0))
-    path('hello/', views.hello_world),
-    path('hi/', views.hi)
+    path('posts/', views.list_posts),
 ]
